@@ -174,6 +174,7 @@ class OrderViewController: UIViewController {
                 }
             }
         }
+        
         Service.shared.completeOrder(order!) { (error, DatabaseReference) in
             if error != nil {
                 print(error)

@@ -28,7 +28,7 @@ extension UITextField {
 extension UILabel {
     func createLogo() -> UILabel {
         let label = UILabel()
-        label.text = "Label"
+        label.text = " "
         label.font = UIFont(name: "Avenir-Light", size: 30)
         label.textColor = UIColor(white: 0, alpha: 0.8)
         return label

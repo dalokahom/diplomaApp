@@ -16,7 +16,7 @@ class MainViewController: UIViewController {
     
 //    weak var delegate: MainViewControllerDelegate?
     
-    private var orders: [Order] = []
+    public var orders: [Order] = []
     
     private let financialView = FinancialView()
     private let tableView = UITableView()

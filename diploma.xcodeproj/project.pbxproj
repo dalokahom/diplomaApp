@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A97B552ECAE77A04F0E404F2 /* Pods_diploma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB55875F74C00345042BB6AA /* Pods_diploma.framework */; };
 		DA31010325E2CB0F007A2A5B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA31010225E2CB0F007A2A5B /* Extensions.swift */; };
 		DA6D6AA6264C15C00001E049 /* LogOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6D6AA5264C15C00001E049 /* LogOutViewController.swift */; };
 		DA832DDA263EA1B50065376B /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA832DD9263EA1B50065376B /* ProductViewController.swift */; };
@@ -34,6 +35,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18AF93408FBDD2F5C770EE90 /* Pods-diploma.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-diploma.debug.xcconfig"; path = "Target Support Files/Pods-diploma/Pods-diploma.debug.xcconfig"; sourceTree = "<group>"; };
+		A473F340A84E394D334CD256 /* Pods-diploma.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-diploma.release.xcconfig"; path = "Target Support Files/Pods-diploma/Pods-diploma.release.xcconfig"; sourceTree = "<group>"; };
+		AB55875F74C00345042BB6AA /* Pods_diploma.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_diploma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA31010225E2CB0F007A2A5B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DA6D6AA5264C15C00001E049 /* LogOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutViewController.swift; sourceTree = "<group>"; };
 		DA832DD9263EA1B50065376B /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
@@ -67,15 +71,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A97B552ECAE77A04F0E404F2 /* Pods_diploma.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10416F85A1A5FB18D214E111 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB55875F74C00345042BB6AA /* Pods_diploma.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B642E804A1058CC9A5773CE5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				18AF93408FBDD2F5C770EE90 /* Pods-diploma.debug.xcconfig */,
+				A473F340A84E394D334CD256 /* Pods-diploma.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -156,6 +171,7 @@
 				DABA8E8C25D0763300C1D5BE /* diploma */,
 				DABA8E8B25D0763300C1D5BE /* Products */,
 				B642E804A1058CC9A5773CE5 /* Pods */,
+				10416F85A1A5FB18D214E111 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -192,9 +208,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DABA8E9E25D0763500C1D5BE /* Build configuration list for PBXNativeTarget "diploma" */;
 			buildPhases = (
+				02731E49B00639E3CE643AA4 /* [CP] Check Pods Manifest.lock */,
 				DABA8E8625D0763300C1D5BE /* Sources */,
 				DABA8E8725D0763300C1D5BE /* Frameworks */,
 				DABA8E8825D0763300C1D5BE /* Resources */,
+				CD221E5B25D91A387FBABCA5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +268,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02731E49B00639E3CE643AA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-diploma-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD221E5B25D91A387FBABCA5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-diploma/Pods-diploma-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-diploma/Pods-diploma-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-diploma/Pods-diploma-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DABA8E8625D0763300C1D5BE /* Sources */ = {
@@ -419,6 +479,7 @@
 		};
 		DABA8E9F25D0763500C1D5BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18AF93408FBDD2F5C770EE90 /* Pods-diploma.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -438,6 +499,7 @@
 		};
 		DABA8EA025D0763500C1D5BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A473F340A84E394D334CD256 /* Pods-diploma.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

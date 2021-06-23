@@ -92,6 +92,4 @@ extension AddProductViewController: AddProductViewDelegate {
         
         self.dismiss(animated: true)
     }
-    
-    
 }

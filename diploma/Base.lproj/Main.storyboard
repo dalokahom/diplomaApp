@@ -9,33 +9,31 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="5mw-uG-XKQ">
+        <scene sceneID="4z8-qy-lWf">
             <objects>
-                <viewController id="bl5-Wn-pGo" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7jb-4n-sBp">
+                <viewController id="2im-oL-3aD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3PG-09-Jci">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kd-TX-gYr">
-                                <rect key="frame" x="111" y="580" width="182" height="128"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCx-Wx-C71">
+                                <rect key="frame" x="52" y="168" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.41416660770000002" green="0.36682484450000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button" image="c">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="medium"/>
-                                </state>
-                            </button>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="YRq-sY-kdS"/>
+                        <viewLayoutGuide key="safeArea" id="WLY-px-3cf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nHR-lN-npP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ktE-v3-drd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305.79710144927537" y="354.91071428571428"/>
+            <point key="canvasLocation" x="-146" y="216"/>
         </scene>
     </scenes>
     <resources>
-        <image name="c" width="128" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
